@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>;
 using namespace std;
 
 void myFunction() {
@@ -9,8 +10,16 @@ void myFunction() {
   cout << "Recipients provide information: identity card at the bank, provide money transaction code, amount received, money source from Paypal!\n";
   
 }
-
 int main() {
   myFunction();
+  return 0;
+};
+
+int main() {
+  string sandbox = "sandbox.paypal.com";
+  string &live = sandbox;
+
+  cout << sandbox << "\n";
+  cout << live << "\n";
   return 0;
 }
